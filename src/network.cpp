@@ -37,7 +37,7 @@ FetchError fetchSubscribers(int &outSubscribers) {
   if (SHOW_RANDOM_VALUE_FOR_TESTING) {
     // outSubscribers = random(-50, 5000) + 250;
     // outSubscribers = random(0, MAX_DISPLAY_VALUE + 1);
-    outSubscribers = lastSubscriberCount + random(0, 14);  // For quick testing of animations
+    outSubscribers = lastSubscriberCount + random(0, 140);  // For quick testing of animations
     lastSubscriberCount = outSubscribers;
     return FETCH_OK;
   }
@@ -98,6 +98,7 @@ FetchError fetchSubscribers(int &outSubscribers) {
   }
 
   outSubscribers = doc["subscribers"].as<int>();
+  lastSubscriberCount = outSubscribers;
   return FETCH_OK;
 }
 

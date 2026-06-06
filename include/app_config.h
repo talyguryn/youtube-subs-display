@@ -19,11 +19,11 @@ extern const char* WIFI_SSID_VALUE;
 extern const char* WIFI_PASSWORD_VALUE;
 extern const char* API_URL_VALUE;
 
-static const bool SHOW_RANDOM_VALUE_FOR_TESTING = true;
+static const bool SHOW_RANDOM_VALUE_FOR_TESTING = false;
 static const bool ENABLE_SERIAL_LOG = false;
 
-// const unsigned long UPDATE_INTERVAL = 5UL * 60UL * 1000UL;  // 5 minutes
-static const unsigned long UPDATE_INTERVAL = 2UL * 1000UL;
+const unsigned long UPDATE_INTERVAL = 5UL * 60UL * 1000UL;  // 5 minutes
+// static const unsigned long UPDATE_INTERVAL = 2UL * 1000UL;
 
 static const int MAX_DISPLAY_VALUE = 9999;
 static const int DISPLAY_REFRESH_FRAMES = 50;
